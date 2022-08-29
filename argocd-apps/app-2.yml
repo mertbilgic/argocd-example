@@ -14,3 +14,7 @@ spec:
     path: apps/app_2
     repoURL: https://github.com/mertbilgic/argocd-example.git
     targetRevision: HEAD
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
