@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: manifest-test
+  labels:
+    app: manifest-test
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: manifest-test
+  template:
+    metadata:
+      labels:
+        app: manifest-test
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
+          ports:
+            - containerPort:x 80
