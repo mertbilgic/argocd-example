@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: manifest-test/base/deployment.yml
+    path: manifest-test/base
     repoURL: https://github.com/mertbilgic/argocd-example.git
     targetRevision: HEAD
   syncPolicy:
