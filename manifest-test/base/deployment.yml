@@ -15,7 +15,7 @@ spec:
         app: manifest-test
     spec:
       containers:
-        - name: nginx
+        - name: manifest-test
           image: nginx:latest
           ports:
-            - containerPort:x 80
+            - containerPort: 5000
